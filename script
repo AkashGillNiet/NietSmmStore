@@ -1,0 +1,20 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.querySelector('form');
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const service = document.getElementById('service').value;
+    const link = document.getElementById('link').value;
+
+    // Basic form validation
+    if (name && email && service && link) {
+      alert('Order submitted successfully!');
+      // You can later replace this alert with actual form submission logic to a backend (PHP or Node.js)
+      form.reset(); // Reset the form after submission
+    } else {
+      alert('Please fill out all fields!');
+    }
+  });
+});
