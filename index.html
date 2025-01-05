@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Marketing Services</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>SMM Service Hub</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Welcome to SMM Service Hub</h2>
+      <p>Boost your social media presence with our reliable and organic services.</p>
+      <a href="#services" class="button">Explore Our Services</a>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="service-card">
+        <h3>Instagram Followers</h3>
+        <p>Get real and active followers to grow your Instagram account.</p>
+        <a href="#contact" class="button">Order Now</a>
+      </div>
+      <div class="service-card">
+        <h3>YouTube Views</h3>
+        <p>Increase views on your YouTube videos to get noticed.</p>
+        <a href="#contact" class="button">Order Now</a>
+      </div>
+      <div class="service-card">
+        <h3>Facebook Likes</h3>
+        <p>Boost engagement on your Facebook posts with likes.</p>
+        <a href="#contact" class="button">Order Now</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We provide high-quality and ethical social media marketing services designed to boost your online presence in a safe and effective manner.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form action="submit_order.php" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="service">Select Service:</label>
+        <select id="service" name="service" required>
+          <option value="Instagram Followers">Instagram Followers</option>
+          <option value="YouTube Views">YouTube Views</option>
+          <option value="Facebook Likes">Facebook Likes</option>
+        </select>
+
+        <label for="link">Social Media Link:</label>
+        <input type="url" id="link" name="link" required>
+
+        <button type="submit" class="button">Submit Order</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SMM Service Hub. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
